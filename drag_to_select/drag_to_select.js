@@ -4,7 +4,7 @@ const canvas = document.getElementById("canvas");
 const board = document.getElementById("board");
 const progressBar = document.getElementById("progress_time");
 const rect = document.getElementById("rect");
-const audio = new Audio("/sounds/swoosh.mp3");
+const audio = new Audio("./sounds/swoosh.mp3");
 
 const intro = document.getElementById("intro");
 const nav = document.getElementById("nav");
