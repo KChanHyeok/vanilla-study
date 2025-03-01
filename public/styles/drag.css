@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.box {
+  border-radius: 15px;
+  width: 100px;
+  height: 100px;
+  background-color: lightsalmon;
+  cursor: grab;
+  z-index: 0;
+}
+
+.box:first-child {
+  background-color: bisque;
+}
+.box:last-child {
+  background-color: brown;
+}
+
+.box:active {
+  cursor: grabbing;
+}

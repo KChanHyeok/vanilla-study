@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>바닐라 JS 공부</title>
+    <style>
+      /* 기본 스타일 */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1000px;
+        padding: 20px;
+      }
+
+      /* 링크 리스트 스타일 */
+      .link-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* 자동 그리드 레이아웃 */
+        gap: 20px;
+        list-style-type: none;
+      }
+
+      .link-card {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .link-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      }
+
+      /* 이미지 스타일 */
+      .link-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: opacity 0.3s ease;
+      }
+
+      .link-card:hover .link-image {
+        opacity: 0.8;
+      }
+
+      /* 텍스트 스타일 */
+      .link-content {
+        padding: 20px;
+        background-color: white;
+      }
+
+      .link-content h2 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .link-content p {
+        font-size: 1rem;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 카드 리스트 -->
+      <ul class="link-list">
+        <li>
+          <a href="/drag" class="link-card">
+            <img src="./images/drag_and_drop_profile.webp" alt="Study Image 1" class="link-image" />
+            <div class="link-content">
+              <h2>바닐라 JS 프로젝트</h2>
+              <p>바닐라 JS로 만든 Drag And Drop</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/dragselect" class="link-card">
+            <img src="./images/drag_to_select_profile.webp" alt="Study Image 2" class="link-image" />
+            <div class="link-content">
+              <h2>바닐라 JS 프로젝트</h2>
+              <p>바닐라 JS로 만든 Drag To Select</p>
+            </div>
+          </a>
+        </li>
+        <!-- <li>
+          <a href="https://example3.com" class="link-card">
+            <img src="https://via.placeholder.com/300" alt="Study Image 3" class="link-image" />
+            <div class="link-content">
+              <h2>바닐라 JS 프로젝트 3</h2>
+              <p>세 번째 프로젝트를 소개합니다!</p>
+            </div>
+          </a>
+        </li> -->
+      </ul>
+    </div>
+  </body>
+</html>

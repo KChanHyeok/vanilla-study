@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/drag_to_select.css" />
+    <title>사과게임 짝퉁</title>
+  </head>
+  <body>
+    <div id="nav" style="visibility: hidden">
+      <span>타이머</span>
+      <progress id="progress_time" max="90" value="90"></progress>
+      <div>점수: <span id="score">0</span></div>
+    </div>
+
+    <div id="canvas">
+      <!-- Intro Section -->
+      <div id="intro">
+        <h1>짝퉁 사과게임</h1>
+        <input type="button" id="start-btn" value="게임시작" />
+      </div>
+
+      <!-- Result Board Section -->
+      <div id="result-board" style="display: none">
+        <h1>결과</h1>
+        <p id="result-message"></p>
+        <input type="button" id="replay-btn" value="다시하기" />
+      </div>
+
+      <!-- Game Board Section -->
+      <div id="board" style="display: none">
+        <div id="rect"></div>
+      </div>
+    </div>
+
+    <!-- Linking JS File -->
+    <script src="scripts/drag_to_select.js"></script>
+  </body>
+</html>
